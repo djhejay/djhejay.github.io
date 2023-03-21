@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.hogwarts{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(#0E1320,20%, #192237 );
+    position:relative;
+}
+a{
+    color: #9FA6AF;
+    text-decoration: none;
+}
+a:hover{
+    color: #D3D9DE;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Nerfherder", sans-serif;
+}
+.img-logo>img{
+    display: block;
+    width: 100px;
+}
+#header{
+    background:url("../assets/images/background/header.jpg");
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 3px #6B7793;
+}
+#header .logo {
+     font-size: 28px;
+     margin: 0;
+     padding: 0;
+     line-height: 1;
+     font-weight: 700;
+     text-transform: uppercase;
+}
+#header .logo a{
+    color: #6B7793;
+    text-decoration: none;
+    text-shadow: 3px 3px #000000;
+}
+.nav-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu>ul{
+    display:flex;
+}
+.nav-menu>ul>li{
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 22px;
+}
+.nav-menu a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Nerfherder", sans-serif;
+    padding: 0 4px;
+    text-transform: uppercase;
+}
+.nav-menu>ul>li a::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #927755;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu a:hover::before,
+.nav-menu li:hover>a::before,
+.nav-menu .active>a::before{
+    visibility:visible;
+    width: 100%;
+}
+.nav-menu a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a{
+    color: #927755;
+}
+.cart-btn{
+    margin-left: 150px;
+}
+.login-btn{
+    margin-left: 10px;
+}
+.login-btn,.cart-btn{
+    text-decoration: none;
+    color: #6B7793;
+    border-radius: 5px;
+    padding: 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 13px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid #6B7793;
+}
+.login-btn:hover,.cart-btn:hover{
+    background: #6B7793;
+    color: #040405;
+}
+@media (max-width:768px){
+    .login-btn{
+        margin-left: 10px;  
+    }
+    .cart-btn{
+        margin-left: 50px;
+    }
+}
+.container>.body-bg>img{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 120px;
+}
