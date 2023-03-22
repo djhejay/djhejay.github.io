@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Irish Grover', cursive;
 }
 body{
     overflow-x: hidden;
@@ -16,8 +16,16 @@ body{
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background-image:linear-gradient(#0E1320,20%, #192237 );
+    background-image: linear-gradient( 90deg,
+                    #040405 10%,
+                    rgba(255,255,255,0) 50%,
+                    rgba(255,255,255,0) 50%,
+                    #040405 90%
+                    );
     position:relative;
+}
+i{
+    padding-left: 10px;
 }
 a{
     color: #9FA6AF;
@@ -27,8 +35,8 @@ a:hover{
     color: #D3D9DE;
     text-decoration: none;
 }
-h1,h2,h3,h4,h5,h6{
-    font-family: "Nerfherder", sans-serif;
+h2,h3,h4,h5,h6{
+    font-family: 'Trade Winds', cursive;
 }
 .img-logo>img{
     display: block;
@@ -139,4 +147,74 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     height: 100%;
     margin-top: 120px;
+}
+
+#banner{
+    background-image: url("../assets/images/background/header.jpg");
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width:100%;
+    position: relative;
+}
+.content{
+    padding-top: 200px;
+    margin-top: 100px;
+}
+.content .main-text{
+    position: relative;
+    z-index: 2;
+}
+.content .main-text h6{
+    font-size: 24px;
+    font-weight: 200;
+    color: #927755;
+    margin-bottom: 30px;
+}
+.content .main-text h1{
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 600;
+    color: #ffb30e;
+    margin: 0px 0px 45px 0px;
+    text-shadow: 3px 3px #48536E;
+}
+.content .main-text h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #927755;
+}
+.content .main-text p{
+    max-width: 100%;
+    width: 480px;
+    color: #927755;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-family:'Times New Roman', Times, serif;
+}
+.content .main-text a{
+    text-decoration: none;
+    color:#ffb30e;
+    background:#927755;
+    padding: 9px 30px;
+    border-radius: 30px;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 500;
+}
+.content .main-text a.more:hover{
+    border: 2px solid #927755;
+    background: transparent;
+    transition: .4s;
+}
+.image{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
 }
