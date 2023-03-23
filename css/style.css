@@ -275,5 +275,20 @@ h2,h3,h4,h5,h6{
 }
 #features>.container>h2{
     color: #6B7793;
-    text-shadow: 2px 2px #040405;
+    text-shadow: 5px 5px #040405;
+    margin-bottom: 50px;
+    font-family: 'Irish Grover', cursive;
+    font-size: 50px;
+}
+#features>.container h3{
+    color: #927755;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 5px 5px #040405;
+}
+#features>.container p{
+    color: #927755;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 3px 3px #040405;
 }
