@@ -141,7 +141,38 @@ h2,h3,h4,h5,h6{
     .cart-btn{
         margin-left: 50px;
     }
-}
+    .image>img{
+        position: absolute;       
+        margin-top: -50px;
+        right: 140px;
+        text-align: left;
+        width: 900px;
+    }
+    .content .main-text h6{
+        margin-top: -120px;
+        text-align: center;
+    }
+    .content .main-text h1{
+        text-align: center;
+    }
+    .content .main-text h3{
+        text-align: center;
+    }
+    .content .main-text p{
+        padding-top:150px;
+        text-align: center;
+        width: 100% !important;
+    }
+    .features{
+        text-align: center;
+    }
+    }
+    .content .main-text a.more:hover{
+        border: 2px solid #927755;
+        background: transparent;
+        transform: scale(1.1);
+        transition: .4s;
+    }
 .container>.body-bg>img{
     background-repeat: no-repeat;
     width: 100%;
@@ -151,6 +182,7 @@ h2,h3,h4,h5,h6{
 
 #banner{
     background-image: url("../assets/images/background/header.jpg");
+    background-attachment: fixed;
     position: fixed;
     background-size: cover;
     background-position: center;
@@ -161,6 +193,7 @@ h2,h3,h4,h5,h6{
 .content{
     padding-top: 200px;
     margin-top: 100px;
+    margin-bottom: 320px;
 }
 .content .main-text{
     position: relative;
@@ -194,7 +227,7 @@ h2,h3,h4,h5,h6{
     margin-bottom: 50px;
     font-family:'Times New Roman', Times, serif;
 }
-.content .main-text a{
+.content .main-text a.more{
     text-decoration: none;
     color:#ffb30e;
     background:#927755;
@@ -208,13 +241,39 @@ h2,h3,h4,h5,h6{
 .content .main-text a.more:hover{
     border: 2px solid #927755;
     background: transparent;
+    transform: scale(1.1);
     transition: .4s;
 }
 .image{
     position: absolute;
     width: 70%;
-    height: 90%;
+    height: 100%;
     bottom: 0;
     right: 0;
     text-align: right;
+    left: 450px;
+    top: 250px;
+    transition: 0.3s;
+}
+.image img{
+    height: 40%;
+}
+.image:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+#features{
+    background-image: linear-gradient( 180deg,
+                    rgba(21, 3, 11,0) 100px,
+                    rgba(21, 3, 11,0) 120px,
+                    rgba(21, 3, 11,0) 100%);
+    height: 1000px;
+}
+#features>.container{
+    padding-top: 150px;
+}
+#features>.container>h2{
+    color: #6B7793;
+    text-shadow: 2px 2px #040405;
 }
