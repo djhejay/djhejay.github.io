@@ -27,6 +27,7 @@ body{
                     #040405 90%
                     );
     position:relative;
+    padding-bottom: 50px;
 }
 i{
     padding-left: 0px;
@@ -590,7 +591,7 @@ h2,h3,h4,h5,h6{
     width:100%;
     position: relative;
     transition: all 0.4s;
-    animation: change3 20s infinite ease-in;
+    animation: change3 20s infinite ease-in-out;
 }
 @keyframes change3{
     0%
@@ -734,7 +735,7 @@ h2,h3,h4,h5,h6{
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    animation: merch 10s ease-in-out;
+    animation: merch 10s infinite ease-in-out;
 }
 @keyframes merch{
     0%
@@ -793,4 +794,129 @@ h2,h3,h4,h5,h6{
 .merchandise{
     text-align:center;
     margin-bottom: 40px;
+}
+
+.footer{
+    background-color: #0c1218;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding:50px 50px 60px 50px;
+}
+.footer .footer-left, .footer .footer-center, .footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer .footer-left{
+    width: 30%;
+}
+.footer h3{
+    color: #927755;
+    font: bold 36px 'Irish Grover', cursive;
+    margin: 0;
+}
+.footer .footer-links{
+    color: #9FA6AF;
+    margin: 20px 0 12px;   
+}
+.footer .footer-links a{
+    display: block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Nerfherder', sans-serif;
+}
+.footer-links a:hover{
+    color: #927755;
+}
+.footer .footer-website-name{
+    color:#48536E;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    font-family: 'Nerfherder', sans-serif;
+}
+.footer-website-name span{
+    font-size: 16px;
+    color: #927755;
+}
+.footer .footer-center{
+    width: 35%;
+}
+.footer .footer-center i{
+    color: #9FA6AF;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer .footer-center p{
+    display: inline-block;
+    color: #9FA6AF;
+    vertical-align: middle;
+    margin: 0;
+    font-family: 'Nerfherder', sans-serif;
+}
+.footer .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+    font-family: 'Nerfherder', sans-serif;
+}
+.footer .footer-center p.mail{
+    color: #927755;
+}
+.footer .footer-right{
+    width: 30%;
+}
+.footer .footer-website-about{
+    line-height: 20px;
+    color: #868b92;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'Nerfherder', sans-serif;
+    margin: 0;
+}
+.footer .footer-website-about span{
+    display: block;
+    color:#9FA6AF;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Nerfherder', sans-serif;
+}
+.footer .footer-icons{
+    margin-top: 25px;
+}
+.footer .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 35px;
+    color:#6B7793;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer .footer-icons a:hover{
+    color:#927755;
+}
+@media(max-width:768px){
+    .footer .footer-left, .footer .footer-center,
+    .footer .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer .footer-center i{
+        margin-left: 0;
+    }
 }
