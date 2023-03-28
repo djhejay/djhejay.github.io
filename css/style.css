@@ -10,6 +10,7 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    background-size: cover;
 }
 .main-width{
     width: 1400px;
@@ -209,10 +210,9 @@ h2,h3,h4,h5,h6{
 }
 
 #banner{
-    background-image: url("../assets/images/background/header.jpg");
+    background-image: url("../assets/images/background/stars.gif");
     background-attachment: fixed;
     position: fixed;
-    background-size: cover;
     background-position: center;
     height: 100%;
     width:100%;
@@ -314,7 +314,8 @@ h2,h3,h4,h5,h6{
     height:max-content;
 }
 #features{
-    background-color: #000000;
+    background-image: url(../assets/images/background/stars.gif);
+    background-attachment: fixed;
 }
 #features>.container{
     padding-top: 150px;
@@ -954,6 +955,132 @@ h2,h3,h4,h5,h6{
     .footer .footer-center i{
         margin-left: 0;
     }
+}
+
+.hi-slide{
+    position: relative;
+    width: 754px;
+    height: 292px;
+    border-radius: 50px;
+    margin: 115px auto 0;
+    margin-bottom: 100px;
+}
+.hi-slide .hi-next,
+.hi-slide .hi-prev{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -25px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #D3D9DE;
+    color:#000000;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+}
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover{
+    opacity: 1;
+    background-color: #D3D9DE;
+}
+.hi-slide .hi-prev{ 
+    left: -80px;
+}
+.hi-slide .hi-prev::before{
+    content: '<';
+}
+.hi-slide .hi-next{
+    right: -75px;
+}
+.hi-slide .hi-next::before{
+    content: '>';
+}
+.hi-slide>ul{
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height:256px;
+    margin: 0;
+    padding: 0;
+}
+.hi-slide>ul>li{
+    overflow: hidden;
+    position: absolute;
+    z-index:0;
+    left:377px;
+    top:147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid #48536E;
+    cursor: pointer;
+    background-color: #333;
+}
+.hi-slide>ul>li>img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+#books-info .rowling{
+    background-image: url("../assets/images/elements//jkrowling.png");
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    height: 300px;
+    width:100%;
+    position: relative;
+}
+.harry-series h3{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #927755;
+}
+.harry-series p{
+    padding-top: 20px;
+    color: #e7e7e7;
+    text-shadow: 2px 2px #000000;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+.book-lists h3{
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 600;
+    text-align: center;
+    color: #ffb30e;
+    margin: 50px 0px 45px 0px;
+    text-shadow: 3px 3px #48536E;
+}
+.book-lists h4{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #927755;
+}
+.book-lists .row-up img{
+    width: 250px;
+    height: auto;
+    margin: 0 15%;
+}
+.book-lists .row-down img{
+    width: 250px;
+    height: auto;
+    margin: 0 25%;
+}
+.book-lists img:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
 }
 
 .content-characters{

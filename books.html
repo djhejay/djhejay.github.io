@@ -16,7 +16,8 @@
     <link rel="stylesheet" type="text/css" href="assets/font_awesome/css/all.min.css">
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.hislide.js"></script>
 
     </head>
 
@@ -76,9 +77,76 @@
                              all of whom are students at Hogwarts School of Witchcraft and Wizardry.</p>
                     </div>
                 </div>
+                <div class="slide hi-slide">
+                    <div class="hi-prev"></div>
+                    <div class="hi-next"></div>
+                    <ul>
+                        <li><img src="assets/images/elements/book1.jpg"></li>
+                        <li><img src="assets/images/elements/book2.jpg"></li>
+                        <li><img src="assets/images/elements/book3.jpg"></li>
+                        <li><img src="assets/images/elements/book4.jpg"></li>
+                        <li><img src="assets/images/elements/book5.jpg"></li>
+                        <li><img src="assets/images/elements/book6.jpg"></li>
+                        <li><img src="assets/images/elements/book7.jpg"></li>
+                    </ul>
+                </div>
                 <div id="main-content">
-                    <section id="features">
-                        
+                    <section id="books-info">
+                        <div class="harry-series" data-aos="fade-up">
+                            <h3>What is Harry Potter series?</h3>
+                            <div class="row">
+                                <div class="col-8">
+                                    <p>Readers of the Harry Potter series have been enchanted with the magical world created by Joanne Rowling (pen name J.K. Rowling).
+                                         This beloved series follows the adventures of the young boy wizard Harry Potter as he faces off against his arch-nemesis Lord Voldemort.</p>
+                                    <p>The series spans seven books and takes us through Harry’s journey at Hogwarts School of Witchcraft and Wizardry, 
+                                        where he meets his best friends, Ron Weasley and Hermione Granger.</p>
+                                    <p>Along with mastering magic spells and potions, Harry must also deal with the everyday trials of being a student – from homework assignments to sports tryouts.
+                                         Thrilling and exciting, the Harry Potter series has captivated readers worldwide.</p>
+                                </div>
+                                <div class="col-4">
+                                    <div class="rowling">
+                                        <img src="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="book-series">
+                        <div class="book-lists" data-aos="fade-up">
+                            <h3>List of Series Books</h3>
+                            <div class="row row-up" data-aos="fade-up">
+                                <div class="col-3">
+                                    <a href=""><img src="assets/images/elements/book1.jpg"></a>
+                                    <h4>Harry Potter and the Sorcerer’s Stone</h4>
+                                </div>
+                                <div class="col-3">
+                                    <a href=""><img src="assets/images/elements/book2.jpg"></a>
+                                    <h4>Harry Potter and the Chamber of Secrets</h4>
+                                </div>
+                                <div class="col-3">
+                                    <a href=""><img src="assets/images/elements/book3.jpg"></a>
+                                    <h4>Harry Potter and the Prisoner of Azkaban</h4>
+                                </div>
+                                <div class="col-3">
+                                    <a href=""><img src="assets/images/elements/book4.jpg"></a>
+                                    <h4>Harry Potter and the Goblet of Fire</h4>
+                                </div>
+                            </div>
+                            <div class="row row-down" data-aos="fade-up">
+                                <div class="col-4">
+                                    <a href=""><img src="assets/images/elements/book5.jpg"></a>
+                                    <h4>Harry Potter and the Order of the Phoenix</h4>
+                                </div>
+                                <div class="col-4">
+                                    <a href=""><img src="assets/images/elements/book6.jpg"></a>
+                                    <h4>Harry Potter and the Half-Blood Prince</h4>
+                                </div>
+                                <div class="col-4">
+                                    <a href=""><img src="assets/images/elements/book7.jpg"></a>
+                                    <h4>Harry Potter and the Deathly Hallows</h4>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -136,6 +204,10 @@
             AOS.init({
                 duration: 2000,
             });
-          </script>      
+          </script>    
+        
+        <script>
+            $('.slide').hiSlide();
+        </script>
     </body>
 </html>
