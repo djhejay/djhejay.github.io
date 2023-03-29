@@ -75,6 +75,10 @@ h2,h3,h4,h5,h6{
 .nav-menu>ul{
     display:flex;
 }
+.nav-menu ul li ul.dropdown{
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 30px;
+}
 .nav-menu>ul>li{
     position: relative;
     white-space: nowrap;
@@ -155,12 +159,59 @@ h2,h3,h4,h5,h6{
     background: #6B7793;
     color: #040405;
 }
+.mobile-menu>span{
+    display: none;
+    color:#6B7793;
+}
 @media (max-width:768px){
+    #header .container{
+        margin: 0px;
+    }
+    #header .logo{
+        margin-right: 150px;
+    }
+    .nav-menu>ul{
+        display:block;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        left:0px;
+        top:37px;
+        width: 200px;
+    }
+    .nav-menu ul li ul.dropdown{
+        left: 150px;
+        background-color: rgba(0, 0, 0, 1);
+        top: 3px;
+    }
+    .mobile-menu{
+        position: relative;
+        text-decoration: none;
+        color: #6B7793;
+        border-radius: 5px;
+        padding: 8px 25px;
+        white-space: nowrap;
+        transition: 0.3s;
+        font-size: 13px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: 1px solid #6B7793;
+    }
+    .mobile-menu:hover{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .mobile-menu>span{
+        display: inline-block;
+    }
+    .mobile-menu:hover nav{
+        display: block !important;
+    }
     .login-btn{
         margin-left: 10px;  
     }
     .cart-btn{
-        margin-left: 50px;
+        margin-left: 10px;
     }
     .image>img{
         position: absolute;       
@@ -207,6 +258,82 @@ h2,h3,h4,h5,h6{
     width: 100%;
     height: 100%;
     margin-top: 120px;
+}
+
+.sign-up-form img{
+    width: 80px;
+}
+.sign-up-form{
+    width: 400px;
+    height: 670px;
+    padding: 130px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(153, 153, 153);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+.sign-up-form h1{
+    color: #112131;
+}
+.sign-up-form p{
+    text-align: center;
+    padding-top: 10px;
+}
+form a{
+    color: #00087a;
+    text-decoration: none;
+}
+.name{
+    margin-top: 20px;
+    margin-left: 0;
+}
+input[type=text],input[type=password],input[type=email]{
+    outline: none;
+    width: 300px;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    margin: 2px;
+    padding: 5px 5px;
+    color: white;
+}
+.or{
+    background-color: rgb(153, 153, 153);
+    width: 35px;
+    margin: -38px auto 10px auto;
+    position: relative;
+}
+.sign-btn{
+    width: 300px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #927755;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #927755;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.sign-btn:hover{
+    color: #000000;
+    background-color: #927755;
+    border: 2px solid #927755;
+}
+hr{
+    bottom: 20px;
+}
+.signup-btn{
+    padding: 3px 0px;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.signup-btn:hover{
+    color: #000000;
+    background-color: #927755;
+    border: 2px solid #927755;
 }
 
 #banner{
@@ -962,6 +1089,93 @@ h2,h3,h4,h5,h6{
     width: 300px;
     height:auto;
 }
+.house-info h3{
+    color: #e7c500;
+    font-size: 60px !important;
+    text-align: center;
+    padding-top:20px;
+    text-shadow: 5px 5px #26262e;
+    margin-bottom: 20px;
+}
+.house-info p{
+    text-align: center;
+    padding: 0% 10%;
+    color: #e7e7e7;
+    text-shadow: 2px 2px #000000;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+.symbol-title h2{
+    color: #e7c500;
+    font-size: 50px !important;
+    text-align: center;
+    padding-top:50px;
+    text-shadow: 5px 5px #040405;
+    margin-bottom: 20px;
+}
+.symbols .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color:rgba(20, 22, 46, 0.7);
+    margin: 30px 10px;
+    padding: 20px 10px;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 1px 20px rgba(255, 255, 255, 0.7);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+.symbols .card:hover{
+    height: 440px;
+    position: relative;
+}
+.symbols .row{
+    margin: 30px 10% 0px 10%;
+}
+.symbols .card .symbol-image{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -40%;
+    left: 8px;
+    z-index: 1;
+}
+.symbols .card .symbol-image img{
+    border-radius: 15px;
+    margin-left: -165px;
+    width: 600px;
+}
+.symbols .card .symbol-content{
+    position: relative;
+    top: -190px;
+    padding: 10px 15px;
+    color: #f3eea6;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.symbols .card .symbol-content h3{
+    font-size: 28px;
+}
+.symbols .card .symbol-content p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #D3D9DE;
+}
+.symbols .card:hover .symbol-content{
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+.symbols{
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+}
 .hi-slide{
     position: relative;
     width: 754px;
@@ -1087,6 +1301,13 @@ h2,h3,h4,h5,h6{
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
 }
+section.negative-margin-top{
+    margin-top: -120px;
+}
+section.negative-margin-top>div:first-child,
+.book-title{
+    padding-top: 140px;
+}
 .book-title h3{
     margin-top: 100px;
     font-size: 50px;
@@ -1184,14 +1405,15 @@ h2,h3,h4,h5,h6{
 }
 .unknown-char{
     color: #e7c500;
+    position: relative;
     font-size: 40px;
     text-align: center;
     text-shadow: 5px 5px #040405;
 }
 .unknown-carousel{
     position: relative;
-    width: 15%;
-    height: 15%;
+    width: 350px;
+    height: 350px;
     margin-top: 20px;
     margin-bottom: 150px;
     margin-left: auto;
