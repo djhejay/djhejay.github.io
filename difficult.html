@@ -59,7 +59,7 @@
                                                     <li><a href="characters.html #main-char">Unknown Houses</a></li>
                                                 </ul></li>    
                                             </li>
-                                            <li class="active"><a href="#">Mini Quizzes</a></li>
+                                            <li class="active"><a href="#">Mini Quizzes<i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
                                             <li><a href="merch.html">Merch<i class="fa-sharp fa-solid fa-caret-down"></i></a>
                                                 <ul class="dropdown">
                                                     <li><a href="merch.html #trending">Trending</a></li>
@@ -75,62 +75,42 @@
                     </header>
                     <div class="content-items">
                         <div class="main-text-characters" data-aos="fade-right" data-aos-offset="300">
-                            <h1>Hogwarts Quizzes</h1>
-                            <p>Let's put your wizarding knowledge to the test with these mini quizzes for different levels.
-                                How knowledgeable are you when it comes to the overall series.
-                            </p>
+                            <h1>Difficult Level</h1>
+                        </div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <a href="mini_quiz.html"><li aria-current="page"><i class="fa-solid fa-arrow-left"></i> Back to different levels</li></a>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div id="quiz-container" data-aos="fade-down" data-aos-offset="300">
+                        <div class="questions">
+                            <h2 id="question"></h2>
+                            <ol type="A">
+                                <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                                <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                                <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                                <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+                            </ol>
+                            <h4 id="stat"></h4>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" class="question-next">Next</button>
                         </div>
                     </div>
-                    <div class="quiz">
-                        <div class="quiz-title">
-                            <h2>Different Levels</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="card">
-                                    <div class="quiz-image">
-                                        <img src="assets/images/elements/quiz_4.jpg">
-                                    </div>
-                                    <div class="quiz-content">
-                                        <h3>Easy</h3>
-                                        <a href="easy.html"><button>Start Quiz</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card">
-                                    <div class="quiz-image">
-                                        <img src="assets/images/elements/quiz_3.jpg">
-                                    </div>
-                                    <div class="quiz-content">
-                                        <h3>Average</h3>
-                                        <a href="average.html"><button>Start Quiz</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card">
-                                    <div class="quiz-image">
-                                        <img src="assets/images/elements/quiz_2.jpg">
-                                    </div>
-                                    <div class="quiz-content">
-                                        <h3>Difficult</h3>
-                                        <a href="difficult.html"><button>Start Quiz</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card">
-                                    <div class="quiz-image">
-                                        <img src="assets/images/elements/quiz_1.jpg">
-                                    </div>
-                                    <div class="quiz-content">
-                                        <h3>Expert</h3>
-                                        <a href="expert.html"><button>Start Quiz</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="scoreboard" data-aos="fade-down" data-aos-offset="300">
+                        <img src="" alt="">
+                        <h2 id="score-title">Your Score</h2>
+                        <h2 id="score"></h2>
+                        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quizzes</button>
+                        <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
+                    </div>
+                    <div id="answerBank" data-aos="fade-down" data-aos-offset="300">
+                        <h2>Answers :</h2>
+                        <ol type="1" id="answers">
+
+                        </ol>
+                        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quizzes</button>
                     </div>
                 </div>
             </section>
@@ -182,6 +162,7 @@
                 </div>
             </footer>
         </div>
+        <script src="js/difficult.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
         <script>
             AOS.init({
